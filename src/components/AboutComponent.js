@@ -59,8 +59,8 @@ function About(props) {
                 <div className="col-12">
                     <h2>Corporate Leadership</h2>
                 </div>
-                <div className="col-12">
-                    <RenderLeader leaders = {props.leaders}/> 
+                <div className="col-12"> 
+                    <RenderLeader leaders = {props.leaders} leaderLoading = {props.leaderLoading} leaderErrMess={props.leaderErrMess} /> 
                 </div>
             </div>
         </div>

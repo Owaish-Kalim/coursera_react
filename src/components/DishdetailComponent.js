@@ -27,6 +27,7 @@ class CommentForm extends Component {
     handleSubmit = (values) => {
         this.toggleModal();
         this.props.postComment(this.props.dishId, values.rating, values.name, values.comment);
+        // alert('Current State is: ' + JSON.stringify(this.state));
     }
 
 
@@ -110,7 +111,7 @@ function RenderComments({comments, postComment, dishId}) {
                                 </Fade>
                             );
                         })}
-                        </Stagger>
+                </Stagger>
                 </ul>
                 <CommentForm dishId={dishId} postComment={postComment} />
             </div>
